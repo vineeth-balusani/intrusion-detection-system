@@ -1,29 +1,29 @@
 import pickle
 import pandas as pd
 
-dt_pca_pipeline = pickle.load(open(".\Pickle Files\dt_pca_pipeline.pkl", "rb"))
-dt_rfe_pipeline = pickle.load(open(".\Pickle Files\dt_rfe_pipeline.pkl", "rb"))
+dt_pca_pipeline = pickle.load(open("dt_pca_pipeline.pkl", "rb"))
+dt_rfe_pipeline = pickle.load(open("dt_rfe_pipeline.pkl", "rb"))
 
-gnb_pca_pipeline = pickle.load(open(".\Pickle Files\gnb_pca_pipeline.pkl", "rb"))
-gnb_sfs_pipeline = pickle.load(open(".\Pickle Files\gnb_sfs_pipeline.pkl", "rb"))
+gnb_pca_pipeline = pickle.load(open("gnb_pca_pipeline.pkl", "rb"))
+gnb_sfs_pipeline = pickle.load(open("gnb_sfs_pipeline.pkl", "rb"))
 
-logreg_pca_pipeline = pickle.load(open(".\Pickle Files\logreg_pca_pipeline.pkl", "rb"))
-logreg_rfe_pipeline = pickle.load(open(".\Pickle Files\logreg_rfe_pipeline.pkl", "rb"))
+logreg_pca_pipeline = pickle.load(open("logreg_pca_pipeline.pkl", "rb"))
+logreg_rfe_pipeline = pickle.load(open("logreg_rfe_pipeline.pkl", "rb"))
 
-knn_pca_pipeline = pickle.load(open(".\Pickle Files\knn_pca_pipeline.pkl", "rb"))
-knn_rfe_pipeline = pickle.load(open(".\Pickle Files\knn_rfe_pipeline.pkl", "rb"))
+knn_pca_pipeline = pickle.load(open("knn_pca_pipeline.pkl", "rb"))
+knn_rfe_pipeline = pickle.load(open("knn_rfe_pipeline.pkl", "rb"))
 
-randomforest_pca_stackingclassifier = pickle.load(open(".\Pickle Files\\randomforest_pca_stackingclassifier.pkl", "rb"))
-randomforest_stackingclassifier = pickle.load(open(".\Pickle Files\\randomforest_stackingclassifier.pkl", "rb"))
+randomforest_pca_stackingclassifier = pickle.load(open("randomforest_pca_stackingclassifier.pkl", "rb"))
+randomforest_stackingclassifier = pickle.load(open("randomforest_stackingclassifier.pkl", "rb"))
 
-adaboost_pca_stackingclassifier = pickle.load(open(".\Pickle Files\\adaboost_pca_stackingclassifier.pkl", "rb"))
-adaboost_stackingclassifier = pickle.load(open(".\Pickle Files\\adaboost_stackingclassifier.pkl", "rb"))
+adaboost_pca_stackingclassifier = pickle.load(open("adaboost_pca_stackingclassifier.pkl", "rb"))
+adaboost_stackingclassifier = pickle.load(open("adaboost_stackingclassifier.pkl", "rb"))
 
-gbdt_pca_stackingclassifier = pickle.load(open(".\Pickle Files\\gbdt_pca_stackingclassifier.pkl", "rb"))
-gbdt_stackingclassifier = pickle.load(open(".\Pickle Files\\gbdt_stackingclassifier.pkl", "rb"))
+gbdt_pca_stackingclassifier = pickle.load(open("gbdt_pca_stackingclassifier.pkl", "rb"))
+gbdt_stackingclassifier = pickle.load(open("gbdt_stackingclassifier.pkl", "rb"))
 
-xgboost_pca_stackingclassifier = pickle.load(open(".\Pickle Files\\gbdt_pca_stackingclassifier.pkl", "rb"))
-xgboost_stackingclassifier = pickle.load(open(".\Pickle Files\\gbdt_stackingclassifier.pkl", "rb"))
+xgboost_pca_stackingclassifier = pickle.load(open("xgboost_pca_stackingclassifier.pkl", "rb"))
+xgboost_stackingclassifier = pickle.load(open("xgboost_stackingclassifier.pkl", "rb"))
 
 
 def utility_logical_or(col_a, col_b):

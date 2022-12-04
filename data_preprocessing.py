@@ -3,10 +3,10 @@ import pickle
 import pandas as pd
 
 service_target_encoder = pickle.load(open("service_target_encoder.pkl", "rb"))
-flag_target_encoder = pickle.load(open(".\Pickle Files\\flag_target_encoder.pkl", "rb"))
-protocol_type_enc = pickle.load(open(".\Pickle Files\\protocol_type_enc.pkl", "rb"))
-scaler = pickle.load(open(".\Pickle Files\\scaler.pkl", "rb"))
-req_columns = pickle.load(open(".\Pickle Files\\req_columns.pkl", "rb"))
+flag_target_encoder = pickle.load(open("flag_target_encoder.pkl", "rb"))
+protocol_type_enc = pickle.load(open("protocol_type_enc.pkl", "rb"))
+scaler = pickle.load(open("scaler.pkl", "rb"))
+req_columns = pickle.load(open("req_columns.pkl", "rb"))
 
 headers = ['duration', 'protocol_type_icmp', 'protocol_type_tcp', 'protocol_type_udp', 'service', 'flag',
                'src_bytes', 'dst_bytes', 'land', 'wrong_fragment', 'urgent', 'hot',
