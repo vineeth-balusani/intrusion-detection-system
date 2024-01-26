@@ -2,11 +2,16 @@ import pickle
 
 import pandas as pd
 
-service_target_encoder = pickle.load(open("service_target_encoder.pkl", "rb"))
-flag_target_encoder = pickle.load(open("flag_target_encoder.pkl", "rb"))
-protocol_type_enc = pickle.load(open("protocol_type_enc.pkl", "rb"))
-scaler = pickle.load(open("scaler.pkl", "rb"))
-req_columns = pickle.load(open("req_columns.pkl", "rb"))
+#service_target_encoder = pickle.load(open("service_target_encoder.pkl", "rb"))
+service_target_encoder = pd.read_pickle("service_target_encoder.pkl")
+#flag_target_encoder = pickle.load(open("flag_target_encoder.pkl", "rb"))
+flag_target_encoder = pd.read_pickle("flag_target_encoder.pkl")
+#protocol_type_enc = pickle.load(open("protocol_type_enc.pkl", "rb"))
+protocol_type_enc = pd.read_pickle("protocol_type_enc.pkl")
+#scaler = pickle.load(open("scaler.pkl", "rb"))
+scaler = pd.read_pickle("scaler.pkl")
+#req_columns = pickle.load(open("req_columns.pkl", "rb"))
+req_columns = pd.read_pickle("scaler.pkl")
 
 headers = ['duration', 'protocol_type_icmp', 'protocol_type_tcp', 'protocol_type_udp', 'service', 'flag',
                'src_bytes', 'dst_bytes', 'land', 'wrong_fragment', 'urgent', 'hot',
