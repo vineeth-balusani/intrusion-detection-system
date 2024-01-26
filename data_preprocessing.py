@@ -11,7 +11,7 @@ protocol_type_enc = pd.read_pickle("protocol_type_enc.pkl")
 #scaler = pickle.load(open("scaler.pkl", "rb"))
 scaler = pd.read_pickle("scaler.pkl")
 #req_columns = pickle.load(open("req_columns.pkl", "rb"))
-req_columns = pd.read_pickle("scaler.pkl")
+req_columns = pd.read_pickle("req_columns.pkl")
 
 headers = ['duration', 'protocol_type_icmp', 'protocol_type_tcp', 'protocol_type_udp', 'service', 'flag',
                'src_bytes', 'dst_bytes', 'land', 'wrong_fragment', 'urgent', 'hot',
